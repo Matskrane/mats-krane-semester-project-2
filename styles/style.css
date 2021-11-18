@@ -91,6 +91,13 @@
   .navbar ul, .login, .cart {
     display: none;
   }
+  .logo img {
+    width: 18%;
+  }
+  .logo h1 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
 }
 
 .menu-wrap {
