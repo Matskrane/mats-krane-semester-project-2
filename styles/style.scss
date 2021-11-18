@@ -1,0 +1,46 @@
+@import "./components/nav/navbar";
+@import "./components/nav/burgerMenu";
+@import "./components/variables";
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: linear-gradient(to right, #ffffff, #eaeaea, #d6d6d6, #c2c2c2, #aeaeae, #aeaeae, #aeaeae, #aeaeae, #c2c2c2, #d6d6d6, #eaeaea, #ffffff);
+}
+  
+ul {
+    list-style-type: none;
+}
+  
+a {
+    text-decoration: none;
+    color: #333;
+}
+  
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+  
+p {
+    margin: 0;
+}
+  
+img {
+    width: 100%;
+}
+
+.current {
+    border-bottom: solid black;
+}
