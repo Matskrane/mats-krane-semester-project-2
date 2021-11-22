@@ -1,0 +1,69 @@
+@import "../variables";
+
+.footer {
+    margin-top: 1000px;
+    margin-bottom: 100px;
+}
+
+.container-one {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 700px;
+}
+
+.about h3 {
+    border-bottom: solid#333;
+    border-width: 5px;
+}
+
+.about span, .pages span {
+    background-color: #333;
+    color: #fff;
+    padding: 9px 15px;
+    font-family: $font-headers;
+    letter-spacing: 3px;
+}
+
+.about p, .pages li {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pages h3 {
+    border-bottom: solid#333;
+    border-width: 5px;
+    width: 200px;
+}
+
+.socials {
+    margin: auto;
+    max-width: 210px;
+    padding: 50px 0;
+}
+
+.socials ul {
+    display: flex;
+}
+
+.socials li {
+    font-size: 35px;
+    padding: 0 22px;
+}
+
+.fa-instagram {
+    color: #3a2424;
+}
+
+.fa-youtube {
+    color: #ed3f41;
+}
+
+.fa-facebook {
+    color: #3b5a9b;
+}
+
+.copyright {
+    text-align: center;
+}

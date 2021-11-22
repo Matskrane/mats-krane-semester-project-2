@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
 .top {
   text-align: center;
   font-size: 18px;
@@ -13,9 +14,8 @@
   max-width: 1000px;
   margin: auto;
   background-color: white;
-  box-shadow: -1px 2px 15px 4px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: -1px 2px 15px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: -1px 2px 10px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px 2px 15px 4px rgba(0, 0, 0, 0.3);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -44,6 +44,11 @@
   margin-right: 70px;
   font-family: "Arimo", sans-serif;
   font-weight: 500;
+}
+
+.navbar li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .logo {
@@ -109,7 +114,7 @@
 
 .menu-wrap .toggler {
   position: absolute;
-  top: 50px;
+  top: 35px;
   right: 40px;
   z-index: 2;
   cursor: pointer;
@@ -267,6 +272,80 @@
     visibility: hidden;
     display: none;
   }
+}
+
+.footer {
+  margin-top: 1000px;
+  margin-bottom: 100px;
+}
+
+.container-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  max-width: 700px;
+}
+
+.about h3 {
+  border-bottom: solid #333;
+  border-width: 5px;
+}
+
+.about span, .pages span {
+  background-color: #333;
+  color: #fff;
+  padding: 9px 15px;
+  font-family: "Arimo", sans-serif;
+  letter-spacing: 3px;
+}
+
+.about p, .pages li {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.pages h3 {
+  border-bottom: solid #333;
+  border-width: 5px;
+  width: 200px;
+}
+
+.socials {
+  margin: auto;
+  max-width: 210px;
+  padding: 50px 0;
+}
+
+.socials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials li {
+  font-size: 35px;
+  padding: 0 22px;
+}
+
+.fa-instagram {
+  color: #3a2424;
+}
+
+.fa-youtube {
+  color: #ed3f41;
+}
+
+.fa-facebook {
+  color: #3b5a9b;
+}
+
+.copyright {
+  text-align: center;
 }
 
 * {
