@@ -275,7 +275,7 @@
 }
 
 .footer {
-  margin-top: 1000px;
+  margin-top: 700px;
   margin-bottom: 100px;
 }
 
@@ -304,7 +304,7 @@
   margin-left: 200px;
 }
 
-.about p, .pages li {
+.about p {
   margin-top: 5px;
   font-size: 18px;
   font-weight: 500;
@@ -314,6 +314,13 @@
   border-bottom: solid #333;
   border-width: 5px;
   width: 200px;
+}
+
+.pages li {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
 }
 
 .socials {
