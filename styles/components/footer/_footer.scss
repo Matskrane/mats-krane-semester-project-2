@@ -41,13 +41,15 @@
 }
 
 .socials {
-    margin: auto;
-    max-width: 210px;
+    text-align: center;
     padding: 50px 0;
 }
 
 .socials ul {
     display: flex;
+    align-content: center;
+    margin: auto;
+    max-width: 210px;
 }
 
 .socials li {
@@ -94,9 +96,10 @@
         padding: 0 20px;
     }
 
-    .socials {
-        max-width: 190px;
+    .socials ul {
+        max-width: 195px;
     }
+
 
     .container-one {
         width: 90%;
