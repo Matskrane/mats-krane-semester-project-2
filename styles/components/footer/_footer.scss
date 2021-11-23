@@ -93,6 +93,10 @@
 }
 
 @media (max-width:750px) {
+
+    .socials {
+        padding: 30px 0;
+    }
     
     .socials h4 {
         font-size: 14px;
@@ -127,5 +131,9 @@
 
     .about p {
         font-size: 14px;
+    }
+
+    .footer {
+        margin-bottom: 50px;
     }
 }
