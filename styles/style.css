@@ -356,7 +356,7 @@
 
 @media (max-width: 1000px) {
   .pages {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 }
 
@@ -368,6 +368,9 @@
     font-size: 30px;
     padding: 0 20px;
   }
+  .socials {
+    max-width: 185px;
+  }
   .container-one {
     width: 90%;
   }
@@ -375,7 +378,7 @@
     font-size: 12px;
   }
   .pages h3 {
-    width: 140px;
+    width: 130px;
   }
 }
 
