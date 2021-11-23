@@ -283,9 +283,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: auto;
   max-width: 700px;
 }
@@ -301,6 +298,10 @@
   padding: 9px 15px;
   font-family: "Arimo", sans-serif;
   letter-spacing: 3px;
+}
+
+.pages {
+  margin-left: 200px;
 }
 
 .about p, .pages li {
@@ -353,19 +354,28 @@
   padding: 2px;
 }
 
+@media (max-width: 1000px) {
+  .pages {
+    margin-left: 50px;
+  }
+}
+
 @media (max-width: 750px) {
   .socials h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .socials li {
-    font-size: 35px;
+    font-size: 30px;
     padding: 0 20px;
   }
   .container-one {
     width: 90%;
   }
   .copyright p {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .pages h3 {
+    width: 140px;
   }
 }
 
