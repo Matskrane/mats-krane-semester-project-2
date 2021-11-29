@@ -1,0 +1,31 @@
+
+.hero-banner {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    max-width: 1100px;
+    margin: auto;
+    filter: grayscale(80%);
+}
+
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.button-showcase button {
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: white;
+    background-color: #2fd8e4;
+    border: transparent;
+}

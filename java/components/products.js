@@ -12,8 +12,9 @@ export function listProducts (product) {
             </div>
             <div class="right-side">   
                 <h3>${product.title}</h3>
-                <p>${product.price}</p>
-                <h3>${product.description}</h3>
+                <span>${product.price}</span>
+                <p>${product.description}</p>
+                <button>Add to cart</button>
             </div>
         </div> 
     </div>

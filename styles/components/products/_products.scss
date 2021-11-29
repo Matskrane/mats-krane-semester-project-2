@@ -1,0 +1,38 @@
+
+
+
+
+.left-side {
+    width: 170px;
+}
+
+.right-side {
+    width: 150px;
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: white;
+}
+
+.product p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.product h3 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
