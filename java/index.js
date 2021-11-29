@@ -13,6 +13,18 @@ async function getProducts () {
 
         listProducts(product);
 
+    }
+
+    catch(error){
+        console.log(error);
+    }
+};
+
+getProducts()
+
+async function getBanner () {
+    try {
+        
         const response_banner = await fetch(url_banner);
         const banner = await response_banner.json();
         console.log(banner);
@@ -22,10 +34,9 @@ async function getProducts () {
         
     }
 
-
     catch(error){
         console.log(error);
     }
 };
 
-getProducts()
+getBanner()
