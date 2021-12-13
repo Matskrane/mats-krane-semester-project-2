@@ -1,7 +1,7 @@
 @import "../variables";
 
 .footer {
-    margin-top: 300px;
+    margin-top: 250px;
     margin-bottom: 100px;
 }
 
@@ -13,7 +13,7 @@
 
 .about h3 {
     border-bottom: solid#333;
-    border-width: 5px;
+    border-width: 6px;
 }
 
 .about span, .pages span {
@@ -29,19 +29,20 @@
 }
 
 .about p {
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 500;
+    font-family: $font-paragraphs;
 }
 
 .pages h3 {
     border-bottom: solid#333;
-    border-width: 5px;
+    border-width: 6px;
     width: 200px;
 }
 
 .pages li {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 500;
     font-family: $font-headers;
@@ -57,6 +58,10 @@
     align-content: center;
     margin: auto;
     max-width: 210px;
+}
+
+.socials h4 {
+    font-family: $font-headers;
 }
 
 .socials li {
@@ -82,6 +87,8 @@
 }
 .copyright p {
     padding: 2px;
+    font-family: $font-paragraphs;
+    opacity: 90%;
 }
 
 
@@ -123,10 +130,16 @@
     .pages h3 {
         width: 130px;
         font-size: 16px;
+        border-width: 8px;
+    }
+
+    .pages li {
+        font-size: 15px;
     }
 
     .about h3 {
         font-size: 16px;
+        border-width: 8px;
     }
 
     .about p {

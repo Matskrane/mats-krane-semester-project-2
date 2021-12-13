@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Merriweather+Sans:ital,wght@0,400;1,300&family=Noto+Sans+Display:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
 
+
+// Fonts //
 
 $font-logo: 'Ubuntu', sans-serif;
-$font-headers: 'Arimo', sans-serif;
+$font-headers: 'Noto Sans Display', sans-serif;
+$font-paragraphs: 'Merriweather Sans', sans-serif;
+
+
+// Colors //
+
+$color-red: #e60000;
+$color-white: #ebebeb;
+$color-dark: #292929;

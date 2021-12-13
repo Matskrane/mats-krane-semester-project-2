@@ -1,0 +1,131 @@
+@import "../variables";
+
+
+.featured-section {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.featured-products {
+    display: flex;
+    box-shadow: -1px 2px 15px 4px rgba(56, 56, 56, 0.3);
+    border-radius: 10px;
+}
+
+
+.image-container  {
+    padding-top: 10px;
+    width: 250px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.featured-details {
+    background-color: #292929;
+    height: auto;
+    color: #ebebeb;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 270px;
+}
+
+.featured-details p,
+.featured-details h4,
+.featured-details h3 {
+    margin: 0 10px;
+}
+
+.featured-details .first-p {
+    color: #0fcc00;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.featured-details h3 {
+    font-size: 21px;
+    margin-top: 3px;
+    font-family: $font-headers;
+}
+
+.featured-details h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.featured-details a {
+    color: whitesmoke;
+    border-bottom: solid white;
+    border-width: 2px;
+}
+
+.featured-details p {
+    font-family: $font-paragraphs;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+// Responsive //
+
+@media (max-width:1100px) {
+
+    .featured-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .featured-products {
+        margin-bottom: 50px;
+        max-width: 90%;
+    }
+
+    .image-container {
+        width: 200px;
+    }
+
+    .image-container img {
+        height: 250px;
+        width: auto;
+    }
+
+    .header-products {
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width:530px) {
+    
+    .featured-products {
+        display: grid;
+    }
+
+    .image-container {
+        width: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .featured-details {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+}
