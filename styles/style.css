@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Merriweather+Sans:ital,wght@0,400;1,300&family=Noto+Sans+Display:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Merriweather+Sans:ital,wght@0,400;1,300&family=Noto+Sans+Display:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Merriweather+Sans:ital,wght@0,400;1,300&family=Noto+Sans+Display:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Merriweather+Sans:ital,wght@0,400;1,300&family=Noto+Sans+Display:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap");
 .top {
   text-align: center;
   font-size: 18px;
@@ -134,11 +135,11 @@
 
 .menu-wrap .hamburger {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 25px;
   z-index: 1;
-  width: 80px;
-  height: 100px;
+  width: 70px;
+  height: 90px;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +168,8 @@
           justify-content: center;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fd0000), to(#FF9A5A));
+  background: linear-gradient(to bottom right, #fd0000, #FF9A5A);
 }
 
 /* Top and bottom lines */
@@ -204,8 +207,6 @@
 .menu-wrap .toggler:checked ~ .menu > div {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition-duration: var(--menu-speed);
-          transition-duration: var(--menu-speed);
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -234,7 +235,8 @@
 }
 
 .menu-wrap .menu > div {
-  background: var(--overlay-color);
+  background: #292929;
+  opacity: 80%;
   width: 200vw;
   height: 300vw;
   display: -webkit-box;
@@ -288,7 +290,6 @@
     height: 4px;
   }
   .menu-wrap .hamburger > div {
-    width: 90%;
     height: 4px;
   }
 }

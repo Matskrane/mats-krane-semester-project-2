@@ -1,3 +1,5 @@
+@import "../variables";
+
 .menu-wrap {
     position: fixed;
     top: 0%;
@@ -18,11 +20,11 @@
 
 .menu-wrap .hamburger {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 25px;
     z-index: 1;
-    width: 80px;
-    height: 100px;
+    width: 70px;
+    height: 90px;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -38,6 +40,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.4s ease;
+    background: linear-gradient(to bottom right, #fd0000, #FF9A5A);
 }
 
 /* Top and bottom lines */
@@ -74,7 +77,6 @@
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -96,7 +98,8 @@
 }
 
 .menu-wrap .menu > div {
-    background: var(--overlay-color);
+    background: $color-dark;
+    opacity: 80%;
     width: 200vw;
     height: 300vw;
     display: flex;
@@ -144,7 +147,6 @@
         height: 4px;
     }
     .menu-wrap .hamburger > div {
-        width: 90%;
         height: 4px;
     }
 
