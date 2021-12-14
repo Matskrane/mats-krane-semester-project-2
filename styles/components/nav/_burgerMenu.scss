@@ -24,7 +24,6 @@
     width: 80px;
     height: 100px;
     padding: 1rem;
-    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,4 +135,17 @@
         visibility: hidden;
         display: none;
     }
+}
+
+@media (max-width:450px) {
+    
+    .menu-wrap .hamburger > div:before,
+    .menu-wrap .hamburger > div:after {
+        height: 4px;
+    }
+    .menu-wrap .hamburger > div {
+        width: 90%;
+        height: 4px;
+    }
+
 }

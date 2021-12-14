@@ -140,7 +140,6 @@
   width: 80px;
   height: 100px;
   padding: 1rem;
-  background: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,6 +279,17 @@
   nav {
     visibility: hidden;
     display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    height: 4px;
+  }
+  .menu-wrap .hamburger > div {
+    width: 90%;
+    height: 4px;
   }
 }
 
@@ -550,6 +560,9 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     max-width: 800px;
+  }
+  #adjust-margin h2 {
+    margin-top: 50px;
   }
 }
 
