@@ -1,6 +1,6 @@
 import { url_products, url_banner } from './components/api.js';
 import { listBanner } from './components/hero_banner.js';
-// import { list_Featured_Products } from './components/products.js';
+
 
 
 const postProducts = document.querySelector(".featured-section");
@@ -31,11 +31,10 @@ async function getProducts () {
 
     postProducts.innerHTML += `
     
-
     <div class="featured-products">
-    <a href="specificProduct.html?id=${featured[i].id}">
+        <a href="specificProduct.html?id=${featured[i].id}">
         <div class="image-container">
-            <img src="${featured[i].image_url}">
+            <img src="${featured[i].image_url}" alt="preworkout box">
         </div>
         </a>
         <div class="featured-details">
@@ -43,9 +42,7 @@ async function getProducts () {
             <h3>${featured[i].title}</h3>
             <h4>${featured[i].price} kr </h4>
             <p>${featured[i].product_description}</p>
-
             <p><a href="specificProduct.html?id=${featured[i].id}">Learn more</a></p>
-
         </div>           
     </div>
     `

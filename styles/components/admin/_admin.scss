@@ -1,0 +1,35 @@
+@import "../variables";
+
+.header-admin {
+    font-size: 20px;
+    font-family: $font-paragraphs;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.product-creator input,
+.product-creator textarea,
+.product-creator button {
+    display: grid;
+    margin: 20px auto;
+    color: $color-white;
+
+}
+
+.product-creator button {
+    width: 220px;
+    height: 40px;
+    align-items: center;
+}
+
+.product-creator textarea {
+    height: 150px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: $color-dark;
+    background-color: $color-dark;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: $font-paragraphs;
+}

@@ -9,11 +9,11 @@ export function listBanner (banner) {
     
 
     <div class="thumbnail">
-        <img src="${banner.hero_banner_url}"</img>
+        <img src="${banner.hero_banner_url}" alt="weigths and pwo scoop"</img>
             <div class="caption">
                 <p>Swole is the goal<br>size is the price</p>              
                 <div class="button-showcase">                  
-                    <button class="button-62"><a href="products.html">Shop Now!</a></button>
+                    <button class="standard-button"><a href="products.html">Shop Now!</a></button>
                 </div>
             </div>
         </div>

@@ -7,7 +7,9 @@
 @import "./components/products/featuredProducts";
 @import "./components/search_bar/search_bar";
 @import "./components/products/specificProduct";
-
+@import "./components/shopping_cart/shoppingCart";
+@import "./components/login_form/login_form";
+@import "./components/admin/admin";
 
 
 
@@ -21,7 +23,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
-    background-image: linear-gradient(to right, #ffffff, #eaeaea, #d6d6d6, #c2c2c2, #aeaeae, #aeaeae, #aeaeae, #aeaeae, #c2c2c2, #d6d6d6, #eaeaea, #ffffff);
+    // background-image: linear-gradient(to right, #ffffff, #eaeaea, #d6d6d6, #c2c2c2, #aeaeae, #aeaeae, #aeaeae, #aeaeae, #c2c2c2, #d6d6d6, #eaeaea, #ffffff);
 }
   
 ul {

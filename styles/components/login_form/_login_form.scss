@@ -1,0 +1,62 @@
+@import "../variables";
+
+
+.login-container {
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+input {
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: $color-dark;
+    background-color: $color-dark;
+    padding-left: 10px;
+    margin-left: 7px;
+    font-family: $font-paragraphs;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px $color-dark;
+  -webkit-text-fill-color: $color-white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+
+
+.input {
+    margin-top: 20px;
+}
+
+.warning {
+    font-size: 19px;
+    font-family: $font-paragraphs;
+}
+
+
+form button {
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    background-color: $color-dark;
+    border: transparent;
+    border-radius: 2px;
+    color: $color-white;
+    font-size: 18px;
+    font-family: $font-paragraphs;
+    cursor: pointer;
+}
+

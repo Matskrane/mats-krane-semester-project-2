@@ -1,0 +1,62 @@
+@import "../variables";
+
+
+.added-products {
+    margin: 50px auto;
+    max-width: 900px;
+    background-color: rgb(226, 226, 226);
+    padding: 50px 0;
+    border-radius: 5px;
+}
+
+.added-products h2 {
+    font-family: $font-headers;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.shopping-cart-l {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.shopping-cart-l img {
+    height: 100px;
+}
+
+
+.shopping-cart-r {
+    width: auto;
+    color: $color-dark;
+
+}
+
+.shopping-card {
+    max-width: 500px;
+    margin:  10px auto;
+    display: flex;
+}
+
+.shopping-cart-r h3 {
+    margin-top: 10px;
+}
+
+.shopping-card button {
+    margin-left: 150px;
+    margin-top: 10px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: white;
+    background-color: $color-red;
+    border: transparent;
+}
+
+.shopping-card button:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+

@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login</title>
     <meta name="description" content="Best and newest preworkouts on the market from the most popular brands like Cellucore, Muscletech and Mutant">
     <link rel="stylesheet" href="/styles/style.css">
-    
 </head>
 <body>
 
@@ -30,7 +29,7 @@
 
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a  href="index.html">Home</a>
             </li>
             <li>
                 <a href="products.html">Products</a>
@@ -43,7 +42,7 @@
             </a>
         </div>
 
-        <div class="login">
+        <div class="current login">
             <a href="login.html">
             <p>Login</p>
             </a>
@@ -78,12 +77,25 @@
 
 
 
+    <!-- Login form -->
 
-    <div class="added-products">
-            <h2>My shopping cart</h2>
-    </div>
+    <div class="login-container">
+        <div class="header-products">
+            <h2>Login</h2>
+        </div>
+        
+            <form>
+                <div class="failed-login"></div>
 
-
+                <div class="input">               
+                    <input id="username" placeholder="Username/Email"></input>
+                </div>
+                <div class="input">
+                    <input id="password" placeholder="Password"></input>
+                </div>
+                <button>Login</button>
+            </form>      
+    </div>    
 
 
 
@@ -105,7 +117,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="shoppingCart.html">My Shopping Cart</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="login.html">Login</a></li>                      
                     </ul>
             </div>
 
@@ -142,6 +154,6 @@
     </div>
     
 <script src="https://use.fontawesome.com/8552edb4b9.js"></script>
-<script src="/java/shoppingCart.js" type="module"></script>
+<script src="/java/login.js" type="module"></script>
 </body>
 </html>

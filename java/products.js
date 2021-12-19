@@ -1,4 +1,6 @@
 import { url_products } from './components/api.js';
+import { addToLocalStorage, getAddedProducts, saveProducts } from './components/localStorage.js';
+
 
 const productsList = document.querySelector(".products")
 const searchBar = document.getElementById('searchBar');
@@ -32,7 +34,7 @@ const getProducts = async () => {
 };
 
 
-
+const getImages = "http://localhost:5000";
 
 
 const listProducts = (products) => {
@@ -45,7 +47,7 @@ const listProducts = (products) => {
             <div class="product-card">
 
                 <div class="left-side">
-                    <img src="${product.image_url}"> 
+                    <img src="${product.image_url}" alt="preworkout box"> 
                 </div>
             </a>
 
@@ -53,7 +55,7 @@ const listProducts = (products) => {
                     <h3>${product.title}</h3>
                     <span>${product.price} kr</span>
                     <button 
-                        class="button-62"
+                        class="standard-button"
                         id="addFavorite"
                         data-title="${product.title}"
                         data-price="${product.price}"
@@ -70,61 +72,17 @@ const listProducts = (products) => {
     productsList.innerHTML = htmlString;
 
     
-    const addFavoriteButton = document.querySelectorAll(".product button");
+    const addToCartButton = document.querySelectorAll(".product button");
 
-    addFavoriteButton.forEach((button) => {
+    addToCartButton.forEach((button) => {
         button.addEventListener("click", addToLocalStorage);
     });
 
-
-function addToLocalStorage() {
-
-    this.classList.toggle("added")
-        
-    const image_url = this.dataset.image_url;
-    const title = this.dataset.title;
-    const price = this.dataset.price;
+  addToLocalStorage();
+  getAddedProducts();
+  saveProducts();
     
-
-    const currentFavorites = getAddedFavorites();
-
-    const favoriteExists = currentFavorites.find(function (product) {
-            return product.title === title;
-    });
-    
-    if (favoriteExists === undefined) {
-        const product = { title: title, price: price, image_url: image_url };
-        currentFavorites.push(product);
-        saveFavorites(currentFavorites);
-        alert("Successfully added to cart");
-    } else {
-        const newFavorites = currentFavorites.filter((product) => product.title !== title);
-        saveFavorites(newFavorites);
-        alert("Product removed from cart");
-    }
-  }
 };
-
-
-
-
-
-
-function getAddedFavorites() {
-    const favorites = localStorage.getItem("favorites");
-
-    if (favorites === null) {
-        return [];
-    } else {
-        return JSON.parse(favorites);
-    }
-}
-
-function saveFavorites(favorites) {
-    localStorage.setItem("favorites", JSON.stringify(favorites));
-}
-
-
 
 getProducts();
 
