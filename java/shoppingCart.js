@@ -18,7 +18,7 @@ products.forEach((product) => {
             <div class="shopping-cart-r">   
                 <h3>${product.title}</h3>
                 <span>${product.price} kr</span>
-                <button
+                <button onClick="window.location.reload();"
                 id="addFavorite"
                 data-title="${product.title}"
                 data-price="${product.price}"
@@ -47,7 +47,4 @@ console.log(products)
 
 
 if(!localStorage.products) alert("No products added yet!")
-
-
-
 
