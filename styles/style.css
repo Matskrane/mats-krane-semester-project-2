@@ -1078,6 +1078,7 @@ select:-webkit-autofill:focus {
 .warning {
   font-size: 19px;
   font-family: "Merriweather Sans", sans-serif;
+  color: #e60000;
 }
 
 form button {
@@ -1130,6 +1131,15 @@ form button {
   background-color: #292929;
   padding-left: 10px;
   padding-top: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.status {
+  text-align: center;
+}
+
+.success {
+  font-size: 19px;
   font-family: "Merriweather Sans", sans-serif;
 }
 
