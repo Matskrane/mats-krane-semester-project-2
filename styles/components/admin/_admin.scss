@@ -7,6 +7,10 @@
     margin: 50px 0;
 }
 
+.header-admin p {
+    opacity: 85%;
+}
+
 .product-creator input,
 .product-creator textarea,
 .product-creator button {
@@ -33,3 +37,4 @@
     padding-top: 10px;
     font-family: $font-paragraphs;
 }
+

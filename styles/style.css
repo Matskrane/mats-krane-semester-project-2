@@ -1100,6 +1100,10 @@ form button {
   margin: 50px 0;
 }
 
+.header-admin p {
+  opacity: 85%;
+}
+
 .product-creator input,
 .product-creator textarea,
 .product-creator button {
