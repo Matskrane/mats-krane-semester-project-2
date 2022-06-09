@@ -1,6 +1,6 @@
 # Preworkout - E-Commerce
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+<img src="/images/strapi-project (13).png" width="350px" />
 
 ## Description
 
